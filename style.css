@@ -27,9 +27,9 @@ body {
 
 .container {
   background-color: $dayBg;
-  max-height: 700px;
-  min-width: 350px;
-  max-width: 600px;
+  max-height: 70px;
+  min-width: 35px;
+  max-width: 60px;
   width: 70vw;
   height: 80vh;
   border-radius: 8vw;
