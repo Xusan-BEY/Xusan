@@ -1,3 +1,26 @@
 html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
 html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}
 
+$dayBg: #fff;
+$nightBg: #000;
+$toggleDay: #E6A555;
+$toggleNight: #2c4b98;
+$size: 105px;
+$toggleBgTransition: background-color 300ms ease-in;
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: #5796b6;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
