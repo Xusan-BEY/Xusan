@@ -8,45 +8,8 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <body>
 
-<div class="container" data-state="day">
-  <div class="toggle--wrapper">
-    <div class="toggle--knob"></div>
-  </div>
-</div>
 
 
 </body>
 </html>
 
-<script>
-console.clear();
-const elToggle = document.querySelector('.toggle--wrapper');
-const elApp = document.querySelector('.container');
-
-
-const machine = {
-  initial: elApp.dataset.state,//'day',
-  states: {
-    day: {
-      on: {
-        TOGGLE: 'night'
-      }
-    },
-    night: {
-      on: {
-        TOGGLE: 'day'
-      }
-    },
-  }
-};
-
-elToggle.addEventListener('click', (e) => {
-  const currentState = elApp.dataset.state;
-  const nextState = machine.states[currentState].on.TOGGLE;
-  toggleState(nextState);
-})
-
-const toggleState = (state) => {
-  elApp.dataset.state = state;
-}
-</script>
